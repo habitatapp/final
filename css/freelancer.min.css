@@ -170,4 +170,74 @@ header .overlay {
   .f00ter {
       margin: auto;
   }
+
+  .btn-style {
+    color: white; 
+    font-size: 40px; 
+    border: none; 
+    background-color: #1abc9c; 
+    border-color: #1abc9c; 
+    border-radius: 8px;
+    width: 51px; 
+    height: 51px; 
+     
+  }
+
+  .btn-wrap {
+      padding-top: 30px; 
+  }
+
+  .mb-5 {
+      font-size: 20px; 
+  }
+
+  .modal_1_tot {
+      font-size: 50px; 
+  }
+
+  .water-img {
+    width: 149px;
+    padding-top: 37px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .bottle-img {
+    width: 152px;
+    padding-top: 33px;
+    margin: auto;
+    margin-bottom: 30px;
+
+  }
  
+  .cloud-img {
+    width: 203px;
+    padding-top: 12px;
+    margin: auto;
+  }
+
+  .drop-img1 {
+    width: 80px;
+    padding-top: 12px;
+    margin: auto;
+  }
+
+  .bottle-img1 {
+    width: 80px;
+    padding-top: 12px;
+    margin: auto;
+  }
+
+  .cloud-img1 {
+    width: 80px;
+    padding-top: 12px;
+    margin: auto;
+  }
+
+  .portfolio {
+    padding-bottom: 221px;
+  }
+
+  .track-imgs {
+      padding-top: 60px; 
+  }

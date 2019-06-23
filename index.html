@@ -20,9 +20,9 @@
   <link href="css/freelancer.min.css" rel="stylesheet">
 
   <script>
-     var modal_1_tot = 0;
-     var modal_1_savings_daily = 0;
-     var modal_1_savings_yearly = 0; 
+    var modal_1_tot = 0;
+    var modal_1_savings_daily = 0;
+    var modal_1_savings_yearly = 0;
 
     function add_modal_1() {
         modal_1_tot += 1;
@@ -117,48 +117,27 @@
       var modal_3_tot = 0;
       var modal_3_savings_daily = 0;
       var modal_3_savings_yearly = 0;
+    
     function add_modal_3() {
-        modal_3_tot += 1;
-        document.getElementById("modal_3_tot").innerHTML = modal_3_tot;
-         modal_3_savings_daily = modal_3_tot * 3;
-        document.getElementById("modal_3_savings_daily").innerHTML = modal_3_savings_daily;
+      modal_3_tot += 1;
+      document.getElementById("modal_3_tot").innerHTML = modal_3_tot;
+      modal_3_savings_daily = modal_3_tot * 3;
+      document.getElementById("modal_3_savings_daily").innerHTML = modal_3_savings_daily;
 
-          modal_3_savings_yearly= modal_3_savings_daily * 52;
-                  document.getElementById("modal_3_savings_yearly").innerHTML = modal_3_savings_yearly;
- }
- function sub_modal_3() {
-        modal_3_tot -= 1;
-        document.getElementById("modal_3_tot").innerHTML = modal_3_tot;
-         modal_3_savings_daily = modal_3_tot * .166666;
-        document.getElementById("modal_3_savings_daily").innerHTML = modal_3_savings_daily;
+      modal_3_savings_yearly = modal_3_savings_daily * 52;
+      document.getElementById("modal_3_savings_yearly").innerHTML = modal_3_savings_yearly;
+    }
+    function sub_modal_3() {
+      modal_3_tot -= 1;
+      document.getElementById("modal_3_tot").innerHTML = modal_3_tot;
+      modal_3_savings_daily = modal_3_tot * .166666;
+      document.getElementById("modal_3_savings_daily").innerHTML = modal_3_savings_daily;
 
-          modal_3_savings_yearly= modal_3_savings_daily * 365;
-                  document.getElementById("modal_3_savings_yearly").innerHTML = modal_3_savings_yearly;
- }
-      var modal_3a_tot = 0;
-      var modal_3a_savings_daily = 0;
-      var modal_3a_savings_yearly = 0;
-    function add_modal_3a() {
-        modal_3a_tot += 1;
-        document.getElementById("modal_3a_tot").innerHTML = modal_3a_tot;
-         modal_3a_savings_daily = modal_3a_tot * .166666;
-        document.getElementById("modal_3a_savings_daily").innerHTML = modal_3a_savings_daily;
+      modal_3_savings_yearly = modal_3_savings_daily * 365;
+      document.getElementById("modal_3_savings_yearly").innerHTML = modal_3_savings_yearly;
+    }
 
-          modal_3a_savings_yearly= modal_3a_savings_daily * 365;
-                  document.getElementById("modal_3a_savings_yearly").innerHTML = modal_3a_savings_yearly;
- }
- function sub_modal_3a() {
-        modal_3a_tot -= 1;
-        document.getElementById("modal_3a_tot").innerHTML = modal_3a_tot;
-         modal_3a_savings_daily = modal_3a_tot * .166666;
-        document.getElementById("modal_3a_savings_daily").innerHTML = modal_3a_savings_daily;
-
-          modal_3a_savings_yearly= modal_3a_savings_daily * 365;
-                  document.getElementById("modal_3a_savings_yearly").innerHTML = modal_3a_savings_yearly;
- }
- 
-
-</script>
+  </script>
 
 </head>
 
@@ -195,21 +174,23 @@
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="img/portfolio/video!!!.mp4" type="video/mp4">
     </video>
-    
+
     <div class="container h-100">
       <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-white">
-          <img class="masthead-avatar mb-5" id="logo" style="width: 90px; padding-top: 120px" src="img/logo!!!.png" alt="logo">
+          <img class="masthead-avatar mb-5" id="logo" style="width: 90px; padding-top: 120px" src="img/logo!!!.png"
+            alt="logo">
           <h1 class="masthead-heading text-lowercase mb-0">habit@.</h1>
           <h1 class="masthead-heading text-lowercase mb-0">gamifying sustainability.</h1>
           <div class="divider-custom divider-light">
-              <div class="divider-custom-line"></div>
-              <div class="divider-custom-icon">
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="divider-custom-line"></div>
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="divider-custom-line"></div>
           </div>
-          <p class="masthead-subheading font-weight-light mb-0">a simple, minimalistic web app that educates users about sustainability and tracks green habits.</p>
+          <p class="masthead-subheading font-weight-light mb-0">a simple, minimalistic web app that educates users about
+            sustainability and tracks green habits.</p>
           <p class="masthead-subheading font-weight-light mb-0">join the movement: save our habit@s.</p>
         </div>
       </div>
@@ -243,7 +224,13 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+            <div class="track-imgs">
+              <div class="water-img">
+
+
+                <img class="img-fluid" src="img/drop.png" alt="">
+              </div>
+            </div>
           </div>
         </div>
 
@@ -255,7 +242,9 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            <div class="track-imgs">
+              <div class="bottle-img"><img class="img-fluid" src="img/bottle.png" alt=""></div>
+            </div>
           </div>
         </div>
 
@@ -267,7 +256,9 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+            <div class="track-imgs">
+              <div class="cloud-img"><img class="img-fluid" src="img/cloud!.png" alt=""></div>
+            </div>
           </div>
         </div>
 
@@ -278,18 +269,19 @@
   </section>
 
   <!-- Water Section -->
-  <section class = "page-section hero text-white mb-0" id="water">
+  <section class="page-section hero text-white mb-0" id="water">
     <div class="container">
 
       <!-- Water Section Heading -->
-      <img class = "algn" src="img/waterDropletWhite.png" alt="" width="50" height="70"><br>
+      <img class="algn" src="img/waterDropletWhite.png" alt="" width="50" height="70"><br>
       <h2 class="page-section-heading text-center text-lowercase text-white">water</h2><br>
 
-     <!-- Water Section Content -->
+      <!-- Water Section Content -->
       <div class="row">
         <div class="col-lg-4 ml-auto">
           <p class="lead">Agriculture makes up 70% of freshwater demand. Products such as beef and commodities such as chocolate tend to use the most water. The average water footprint of meat from beef cattle (15,400 cubed metric tons) is twenty times larger than for cereals and starchy roots. 
             By choosing alternatives such as a salad or chicken in contrast to beef, you can help to significatly reduce long-term water usage, as these commodities require less water to cultivate.</p>
+
         </div>
         <div class="col-lg-4 mr-auto">
           <p class="lead">Domestic Use makes up 8% of freshwarer demand. According to the EPA, bathroom faucets run at about 2 gallons of water a minute. Therefore, by turning off faucets and taking shower showers, you can significatly cut down on your water usage overall. It is also a good practice to only use dishwashers once it is entirely full, as it requires less water than hand-washing them one-by-one.</p>
@@ -299,9 +291,9 @@
     </div>
   </section>
 
-<!--white space-->
-<section class = "blank" id="blank"></section>
-  
+  <!--white space-->
+  <section class="blank" id="blank"></section>
+
   <!-- Plastic Section -->
   <section class="page-section plastic text-white mb-0" id="plastic">
     <div class="container">
@@ -324,21 +316,21 @@
            Due to the fact that they are non-biodegradable and persist in nature for extended periods of time, improper disposal of plastic can lead to ocean pollution and bioaccumulation in the food chain.
             Thus, it becomes vital for consumers to reuse, reduce, and recycle old bottles instead of continuing to buy single-use bottles. 
         </p>
+
       </div>
     </div>
- </div>
-</section>
+  </section>
 
 
   <!--white space-->
-  <section class = "blank" id="blank"></section>
+  <section class="blank" id="blank"></section>
 
   <!-- emissions section -->
   <section class="page-section emissions text-white mb-0" id="emissions">
     <div class="container">
 
       <!-- emissions section Heading -->
-      <img class = "algnpt2" src="img/cloud.png" alt="" width="100" height="70"><br>
+      <img class="algnpt2" src="img/cloud.png" alt="" width="100" height="70"><br>
       <h2 class="page-section-heading text-center text-lowercase text-white">Emissions</h2><br>
 
    <!-- emissions Section Content -->
@@ -356,52 +348,58 @@
     </div>
   </div>
 
-</div>
-</section>
+    </div>
+  </section>
 
   <!-- Contact Section -->
- <section class="page-section" id="contact">
-  <div class="container">
+  <section class="page-section" id="contact">
+    <div class="container">
 
-    <!-- Contact Section Heading -->
-    <h2 class="page-section-heading text-center text-lowercase text-secondary mb-0">USER DASHBOARD</h2>
-
-
+      <!-- Contact Section Heading -->
+      <h2 class="page-section-heading text-center text-lowercase text-secondary mb-0">USER DASHBOARD</h2>
 
 
-    <!-- Icon Divider -->
-    <div class="divider-custom">
-      <div class="divider-custom-line"></div>
-      <div class="divider-custom-icon">
-        <i class="fas fa-star"></i>
-      </div>
-      <div class="divider-custom-line"></div>
-    </div>
-
-    <div class="wrap-box">
 
 
-      <div class="person">
-        <img src="img/portfolio/person3.png">
-        <h2 class="icon-section text-left text-lowercase text-secondary">invira mint</h2>
-      </div>
-
-      <div class="box-stack">
-        <div class="box">
-          <h3 style="border:3px;"></h3>
-          <h3 style="border:3px;">Points: </h3>
-          <h3 style="border:3px;"></h3>
-          <h3 style="border:3px;">Badges: </h3>
-          <div class="badges-row"></div>
-          <img class="badges" src="img/portfolio/waterBadge.png">
-          <img class="badges"src="img/portfolio/recycleBadge.png">
-          <img class="badges" src="img/portfolio/carpoolBadge.png">
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
         </div>
-        <div class="box2">
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="wrap-box">
+
+
+        <div class="person">
+          <img src="img/portfolio/person3.png">
+          <h2 class="icon-section text-left text-lowercase text-secondary">invira mint</h2>
+        </div>
+
+        <div class="box-stack">
+          <div class="box">
+            <h3 style="border:3px;"></h3>
+            <h3 style="border:3px;">Points: </h3>
+            <h3 style="border:3px;"></h3>
+            <h3 style="border:3px;">Badges: </h3>
+            <div class="badges-row"></div>
+            <img class="badges" src="img/portfolio/waterBadge.png">
+            <img class="badges" src="img/portfolio/recycleBadge.png">
+            <img class="badges" src="img/portfolio/carpoolBadge.png">
+          </div>
+          <div class="box2">
+            <h3 style="border:3px;"></h3>
+            <h3 style="border:3px;">Join Date: 6/01/19</h3>
+            <h3 style="border:3px;"></h3>
+            <h3 style="border:3px;">Streak Count: 22</h3>
+          </div>
+        </div>
+
+        <div class="box3">
           <h3 style="border:3px;"></h3>
-          <h3 style="border:3px;">Join Date: 6/01/19</h3>
-          <h3 style="border:3px;"></h3>
-          <h3 style="border:3px;">Streak Count: 22</h3>
+          <h3 style="border:3px;">Did You Know?</h3>
         </div>
       </div>
      
@@ -412,27 +410,21 @@
       </div>
     </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="footer text-center">
-  <div class="container">
-    <div class="row">
-
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
 
       <!-- Footer Social Icons -->
       <div class="f00ter">
         <h4 class="text-lowercase">made with 💖 by the windycityhacks she++ team.✨</h4>
         <h4 class="text-lowercase">justina, becky, yamilett, & salma.👩‍💻</h4>
       </div>
-
-
-
+      </div>
     </div>
-  </div>
-</footer>
-
+  </footer>
 
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
@@ -440,6 +432,7 @@
       <small>Copyright &copy; habit@ 2019.</small>
     </div>
   </section>
+
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-to-top d-lg-none position-fixed ">
@@ -465,7 +458,8 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-lowercase mb-0">Plastic Use</h2>
+                <h2 class="portfolio-modal-title text-secondary text-lowercase mb-0">Water Conservation</h2>
+
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -475,8 +469,10 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
+                <div class="drop-img1"><img class="img-fluid rounded mb-5" src="img/drop.png" alt=""></div>
+
                 <!-- Portfolio Modal - Text -->
+
                 <p class="mb-5">The average reusable bottle holds about 32 oz, whereas the average plastic water bottle can only hold 16 oz.
                   The average human should be drinking at least 8 cups, or 64 oz, of water a day. 
                   In contrast to reusable water bottles that would need to be refilled only once, you need 4 plastic bottles per day to meet 
@@ -491,7 +487,6 @@
     <p> This means you saved <a id = "modal_1_savings_daily">0</a> grams of plastic from going into a landfill. if you keep that up, you'll prevent <a id = "modal_1_savings_yearly">0</a> pounds of trash from going into a landfill.
       By using a reusable water bottle, you would be saving 1,460 plastic bottles per year. Even if you only purchased one plastic bottle per day, you’d still be wasting over 300 non-reusable containers that could be spared with one reusable bottle.
     </p>
-<!-- 
     <p>Total <a id="modal_1_tot">0</a></p>
     <button type="button" onClick="add_modal_1a()">+</button>
                   <button type="button" onClick="sub_modal_1a()">-</button>
@@ -523,7 +518,8 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-lowercase mb-0">Water Conservation</h2>
+                <h2 class="portfolio-modal-title text-secondary text-lowercase mb-0">Plastic Use</h2>
+
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -533,18 +529,30 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
+                <div class="bottle-img1">
+                  <img class="img-fluid rounded mb-5" src="img/bottle.png" alt="">
+                </div>
+
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">water is an essential element of all life. we can save hundreds of gallons of water a year if we conserve it wisely.</p>
 
-                <p class="mb-5"> turning off the sink while brushing teeth saves on average 1/6 of a gallon of water every time. enter below how many times you turned off the sink while brushing your teeth today</p>
+                <p class="mb-5">By the year 2050, it is estimated that there will be more plastic than fish in the
+                  ocean. It is imperative we change our habits.</p>
 
-                    <button type="button" onClick="add_modal_2()">+</button>
-                  <button type="button" onClick="sub_modal_2()">-</button>
-    <p> <a id="modal_2_tot">0</a> times water was saved while brushing teeth in a day. </p>
-    <p> This means you saved <a id = "modal_2_savings_daily">0</a> gallons of water per day. if you keep that up, you'll save <a id = "modal_2_savings_yearly">0</a> gallons of water per year.
-    </p>
-<!--     <button type="button" onClick="add_modal_2a()">+</button>
+                <p class="mb-5">Use the tool below to select the number of times per week that you use a reusable cup
+                  instead of a single-use plastic cup.</p>
+                <hr />
+                <div class="btn-wrap">
+                  <button class="btn-style" type="button" onClick="add_modal_2()">+</button>
+                  <button class="btn-style" type="button" onClick="sub_modal_2()">-</button>
+                </div>
+
+                <p class="mb-5"> A reusable cup was used <a id="modal_2_tot">0</a> times in the last week. </p>
+                <hr />
+                <p class="mb-5"> This means you saved <a id="modal_2_savings_daily">0</a> pounds of plastic from going
+                  into a landfill. If you keep that up, you'll prevent <a id="modal_2_savings_yearly">0</a> pounds of
+                  trash from going into a landfill.
+                </p>
+                <!--     <button type="button" onClick="add_modal_2a()">+</button>
                   <button type="button" onClick="sub_modal_2a()">-</button>
     <p>Total 2 <a id="modal_2a_tot">0</a></p>                  
  -->
@@ -585,17 +593,26 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
+                <div class="cloud-img1"><img class="img-fluid rounded mb-5" src="img/cloud!.png" alt=""></div>
+
                 <!-- Portfolio Modal - Text -->
-               <p class="mb-5"> carbon emissions contribute to global warming. reducing consumption of fossil fuels can reduce this.</p>
+                <p class="mb-5"> Carbon emissions contribute to global warming. Reducing the consumption of fossil fuels
+                  can help lessen this.</p>
 
-                <p class="mb-5">taking public transportation can reduce carbon emissions on average 3 kg per trip. enter how many times you have taken public transportation rather than a ride in a personal vehicle this week. </p>
-
-                    <button type="button" onClick="add_modal_3()">+</button>
-                  <button type="button" onClick="sub_modal_3()">-</button>
-    <p> public transportation was used <a id="modal_3_tot">0</a> times this week. </p>
-    <p> this means you prevented <a id = "modal_3_savings_daily">0</a> kilograms of carbon per week. if you keep that up, you'll prevent <a id = "modal_3_savings_yearly">0</a> kilograms of carbon from being released into the atmosphere.
-    </p>    
+                <p class="mb-5">Taking public transportation can reduce carbon emissions on average 3 kg per trip. Enter
+                  how many times you have taken public transportation rather than a ride in a personal vehicle this
+                  week. </p>
+                <hr />
+                <div class="btn-wrap">
+                  <button class="btn-style" type="button" onClick="add_modal_3()">+</button>
+                  <button class="btn-style" type="button" onClick="sub_modal_3()">-</button>
+                </div>
+                <p class="mb-5"> Public transportation was used <a id="modal_3_tot">0</a> times this week.</p>
+                <hr />
+                <p class="mb-5"> This means you prevented <a id="modal_3_savings_daily">0</a> kilograms of carbon per
+                  week. If you keep that up, you'll prevent <a id="modal_3_savings_yearly">0</a> kilograms of carbon
+                  from being released into the atmosphere.
+                </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
