@@ -20,9 +20,26 @@
   <link href="css/freelancer.min.css" rel="stylesheet">
 
   <script>
+
+    var points = 0;
      var modal_1_tot = 0;
      var modal_1_savings_daily = 0;
      var modal_1_savings_yearly = 0; 
+      var modal_1a_tot = 0;
+      var modal_1a_savings_daily = 0;
+      var modal_1a_savings_yearly = 0; 
+      var modal_3a_tot = 0;
+      var modal_3a_savings_daily = 0;
+      var modal_3a_savings_yearly = 0;
+      var modal_2_tot = 0;
+      var modal_2_savings_daily = 0;
+      var modal_2_savings_yearly = 0; 
+      var modal_2a_tot = 0;
+      var modal_2a_savings_daily = 0;
+      var modal_2a_savings_yearly = 0; 
+      var modal_3_tot = 0;
+      var modal_3_savings_daily = 0;
+      var modal_3_savings_yearly = 0;
 
     function add_modal_1() {
         modal_1_tot += 1;
@@ -43,9 +60,6 @@
                   document.getElementById("modal_1_savings_yearly").innerHTML = modal_1_savings_yearly;      
 
  }
-      var modal_1a_tot = 0;
-      var modal_1a_savings_daily = 0;
-      var modal_1a_savings_yearly = 0; 
 
     function add_modal_1a() {
         modal_1a_tot += 1;
@@ -66,9 +80,6 @@
                   document.getElementById("modal_1a_savings_yearly").innerHTML = modal_1a_savings_yearly;
  }
 
-      var modal_2_tot = 0;
-      var modal_2_savings_daily = 0;
-      var modal_2_savings_yearly = 0; 
 
     function add_modal_2() {
         modal_2_tot += 1;
@@ -91,10 +102,6 @@
 
  }
 
-      var modal_2a_tot = 0;
-      var modal_2a_savings_daily = 0;
-      var modal_2a_savings_yearly = 0; 
-
     function add_modal_2a() {
         modal_2a_tot += 1;
         document.getElementById("modal_2a_tot").innerHTML = modal_2a_tot;
@@ -115,9 +122,7 @@
  }
  
 
-      var modal_3_tot = 0;
-      var modal_3_savings_daily = 0;
-      var modal_3_savings_yearly = 0;
+
     function add_modal_3() {
         modal_3_tot += 1;
         document.getElementById("modal_3_tot").innerHTML = modal_3_tot;
@@ -136,9 +141,7 @@
           modal_3_savings_yearly= modal_3_savings_daily * 365;
                   document.getElementById("modal_3_savings_yearly").innerHTML = modal_3_savings_yearly;
  }
-      var modal_3a_tot = 0;
-      var modal_3a_savings_daily = 0;
-      var modal_3a_savings_yearly = 0;
+
     function add_modal_3a() {
         modal_3a_tot += 1;
         document.getElementById("modal_3a_tot").innerHTML = modal_3a_tot;
@@ -157,8 +160,10 @@
           modal_3a_savings_yearly= modal_3a_savings_daily * 365;
                   document.getElementById("modal_3a_savings_yearly").innerHTML = modal_3a_savings_yearly;
  }
- 
 
+
+points= modal_1_savings_daily + modal_1a_savings_daily + modal_2_savings_daily + modal_2a_savings_daily + modal_3a_savings_daily + modal_3_savings_daily;
+document.getElementById("points").innerHTML = points;
 </script>
 
 </head>
@@ -181,7 +186,7 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Track</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Impact</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#water">Impact</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">User Info</a>
@@ -196,7 +201,7 @@
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
-     <img class="masthead-avatar mb-5" id="logo" style="width: 90px" src="img/logo!!!.png" alt="logo">
+      <img class="masthead-avatar mb-5" id="logo" style="width: 90px" src="img/logo!!!.png" alt="logo">
 
       <!-- Masthead Heading -->
       <h1 class="masthead-heading text-lowercase mb-0">habit@.</h1>
@@ -283,7 +288,7 @@
     <div class="container">
 
       <!-- Water Section Heading -->
-      <img class= "center" src="img/waterDropletWhite.png" alt="" width="50" height="70"><br>
+      <img class = "algn" src="img/waterDropletWhite.png" alt="" width="50" height="70"><br>
       <h2 class="page-section-heading text-center text-lowercase text-white">water</h2><br>
 
      <!-- Water Section Content -->
@@ -307,7 +312,7 @@
     <div class="container">
 
       <!-- plastic Section Heading -->
-      <img class= "center" src="img/waterBottle.png" alt="" width="100" height="100"><br>
+      <img class = "algnpt3" src="img/waterBottle.png" alt="" width="100" height="100"><br>
       <h2 class="page-section-heading text-center text-lowercase text-white">Plastic</h2><br>
 
      <!-- plastic Section Content -->
@@ -331,7 +336,7 @@
     <div class="container">
 
       <!-- emissions section Heading -->
-      <img class= "center" src="img/cloud.png" alt="" width="100" height="70"><br>
+      <img class = "algnpt2" src="img/cloud.png" alt="" width="100" height="70"><br>
       <h2 class="page-section-heading text-center text-lowercase text-white">Emissions</h2><br>
 
    <!-- emissions Section Content -->
@@ -563,6 +568,8 @@
     <p> public transportation was used <a id="modal_3_tot">0</a> times this week. </p>
     <p> this means you prevented <a id = "modal_3_savings_daily">0</a> kilograms of carbon per week. if you keep that up, you'll prevent <a id = "modal_3_savings_yearly">0</a> kilograms of carbon from being released into the atmosphere.
     </p>    
+
+    <p>points <a id=points">0</a> </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
