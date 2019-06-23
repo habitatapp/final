@@ -181,7 +181,7 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Track</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Impact</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#water">Impact</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">User Info</a>
@@ -191,29 +191,29 @@
     </div>
   </nav>
 
-  <!-- Masthead -->
-  <header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
-
-      <!-- Masthead Avatar Image -->
-     <img class="masthead-avatar mb-5" id="logo" style="width: 90px" src="img/logo!!!.png" alt="logo">
-
-      <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-lowercase mb-0">habit@.</h1>
-      <h1 class="masthead-heading text-lowercase mb-0">gamifying sustainability.</h1>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+  <header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="img/portfolio/video!!!.mp4" type="video/mp4">
+    </video>
+    
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <img class="masthead-avatar mb-5" id="logo" style="width: 90px; padding-top: 120px" src="img/logo!!!.png" alt="logo">
+          <h1 class="masthead-heading text-lowercase mb-0">habit@.</h1>
+          <h1 class="masthead-heading text-lowercase mb-0">gamifying sustainability.</h1>
+          <div class="divider-custom divider-light">
+              <div class="divider-custom-line"></div>
+              <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="divider-custom-line"></div>
+          </div>
+          <p class="masthead-subheading font-weight-light mb-0">a simple, minimalistic web app that educates users about sustainability and tracks green habits.</p>
+          <p class="masthead-subheading font-weight-light mb-0">join the movement: save our habit@s.</p>
         </div>
-        <div class="divider-custom-line"></div>
       </div>
-
-      <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">a simple, minimalistic web app that educates users about sustainability and tracks green habits.</p>
-      <p class="masthead-subheading font-weight-light mb-0">join the movement. save our habit@s.</p>
     </div>
   </header>
 
@@ -283,16 +283,16 @@
     <div class="container">
 
       <!-- Water Section Heading -->
-      <img class= "center" src="img/waterDropletWhite.png" alt="" width="50" height="70"><br>
+      <img class = "algn" src="img/waterDropletWhite.png" alt="" width="50" height="70"><br>
       <h2 class="page-section-heading text-center text-lowercase text-white">water</h2><br>
 
      <!-- Water Section Content -->
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">Agriculture makes up 70% of freshwater demand. Products such as beef and commodities such as chocolate tend to use the most water. Per ton of product, animal products generally have a larger water footprint than crop products. </p>
+          <p class="lead">Agriculture makes up 70% of freshwater demand. Products such as beef and commodities such as chocolate tend to use the most water. Per ton of product, animal products generally have a larger water footprint than crop products. The average water footprint of meat from beef cattle (15,400 cubed metric tons) is twenty times larger than for cereals and starchy roots.</p>
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead">The average water footprint of meat from beef cattle (15,400 cubed metric tons) is twenty times larger than for cereals and starchy roots.</p>
+          <p class="lead"></p>
         </div>
       </div>
 
@@ -307,7 +307,7 @@
     <div class="container">
 
       <!-- plastic Section Heading -->
-      <img class= "center" src="img/waterBottle.png" alt="" width="100" height="100"><br>
+      <img class = "algnpt3" src="img/portfolio/bottle.png" alt="" width="50" height="100"><br>
       <h2 class="page-section-heading text-center text-lowercase text-white">Plastic</h2><br>
 
      <!-- plastic Section Content -->
@@ -316,7 +316,9 @@
         <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
       </div>
       <div class="col-lg-4 mr-auto">
-        <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+        <p class="lead">Plastics are durable, lightweight and inexpensive materials. They can readily be molded into various products which find uses in a plethora of applications. Every year, more than 100 million tons of plastics are manufactured across the globe. Around 200 billion pounds of new plastic material is thermoformed, foamed, laminated and extruded into millions of packages and products. Consequently, the reuse, recovery and the recycling of plastics are extremely important.  
+
+        </p>
       </div>
     </div>
  </div>
@@ -331,7 +333,7 @@
     <div class="container">
 
       <!-- emissions section Heading -->
-      <img class= "center" src="img/cloud.png" alt="" width="100" height="70"><br>
+      <img class = "algnpt2" src="img/cloud.png" alt="" width="100" height="70"><br>
       <h2 class="page-section-heading text-center text-lowercase text-white">Emissions</h2><br>
 
    <!-- emissions Section Content -->
@@ -348,65 +350,79 @@
 </section>
 
   <!-- Contact Section -->
-  <section class="page-section" id="contact">
-    <div class="container">
+ <section class="page-section" id="contact">
+  <div class="container">
 
-      <!-- Contact Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+    <!-- Contact Section Heading -->
+    <h2 class="page-section-heading text-center text-lowercase text-secondary mb-0">USER DASHBOARD</h2>
 
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
+
+
+
+    <!-- Icon Divider -->
+    <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="divider-custom-line"></div>
+    </div>
+
+    <div class="wrap-box">
+
+
+      <div class="person">
+        <img src="img/portfolio/person3.png">
+        <h2 class="icon-section text-left text-lowercase text-secondary">invira mint</h2>
       </div>
 
-      
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <div class="row">
-
-        <!-- Footer Location -->
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">2215 John Daniel Drive
-            <br>Clark, MO 65243</p>
+      <div class="box-stack">
+        <div class="box">
+          <h3 style="border:3px;"></h3>
+          <h3 style="border:3px;">Points: </h3>
+          <h3 style="border:3px;"></h3>
+          <h3 style="border:3px;">Badges: </h3>
+          <div class="badges-row"></div>
+          <img class="badges" src="img/portfolio/waterBadge.png">
+          <img class="badges"src="img/portfolio/recycleBadge.png">
+          <img class="badges" src="img/portfolio/carpoolBadge.png">
         </div>
-
-        <!-- Footer Social Icons -->
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-facebook-f"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-twitter"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-linkedin-in"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-dribbble"></i>
-          </a>
+        <div class="box2">
+          <h3 style="border:3px;"></h3>
+          <h3 style="border:3px;">Join Date: 6/01/19</h3>
+          <h3 style="border:3px;"></h3>
+          <h3 style="border:3px;">Streak Count: 22</h3>
         </div>
-
-        <!-- Footer About Text -->
-        <div class="col-lg-4">
-          <h4 class="text-uppercase mb-4">About Freelancer</h4>
-          <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
-            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-        </div>
-
+      </div>
+     
+      <div class="box3">
+        <h3 style="border:3px;"></h3>
+        <h3 style="border:3px;">Did You Know?</h3>
       </div>
     </div>
-  </footer>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <div class="row">
+
+
+      <!-- Footer Social Icons -->
+      <div class="f00ter">
+        <h4 class="text-lowercase">made with 💖 by the windycityhacks she++ team.✨</h4>
+        <h4 class="text-lowercase">justina, becky, yamilett, & salma.👩‍💻</h4>
+        <h4 class="text-lowercase">Copyright © Habit@ 2019.</h4>
+      </div>
+
+
+
+    </div>
+  </div>
+</footer>
+
 
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
