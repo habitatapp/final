@@ -25,53 +25,99 @@
     var modal_1_savings_yearly = 0;
 
     function add_modal_1() {
-      modal_1_tot += 1;
-      document.getElementById("modal_1_tot").innerHTML = modal_1_tot;
-      modal_1_savings_daily = modal_1_tot * .166666;
-      document.getElementById("modal_1_savings_daily").innerHTML = modal_1_savings_daily;
+        modal_1_tot += 1;
+        document.getElementById("modal_1_tot").innerHTML = modal_1_tot;
+         modal_1_savings_daily = ((32*modal_1_tot) / 16.9) * 13.5;
+        document.getElementById("modal_1_savings_daily").innerHTML = modal_1_savings_daily;
 
-      modal_1_savings_yearly = modal_1_savings_daily * 365;
-      document.getElementById("modal_1_savings_yearly").innerHTML = modal_1_savings_yearly;
-    }
-    function sub_modal_1() {
-      modal_1_tot -= 1;
-      document.getElementById("modal_1_tot").innerHTML = modal_1_tot;
-      modal_1_savings_daily = modal_1_tot * .166666;
-      document.getElementById("modal_1_savings_daily").innerHTML = modal_1_savings_daily;
+          modal_1_savings_yearly= (modal_1_savings_daily/453.592) * 365;
+                  document.getElementById("modal_1_savings_yearly").innerHTML = modal_1_savings_yearly;        
+ }
+ function sub_modal_1() {
+        modal_1_tot -= 1;
+        document.getElementById("modal_1_tot").innerHTML = modal_1_tot;
+        modal_1_savings_daily = ((32*modal_1_tot) / 16.9) * 52.1429;
+        document.getElementById("modal_1_savings_daily").innerHTML = modal_1_savings_daily;
 
-      modal_1_savings_yearly = modal_1_savings_daily * 365;
-      document.getElementById("modal_1_savings_yearly").innerHTML = modal_1_savings_yearly;
-}
-    var modal_2_tot = 0;
-    var modal_2_savings_daily = 0;
-    var modal_2_savings_yearly = 0;
+          modal_1_savings_yearly= (modal_1_savings_daily/453.592) * 52.1429;
+                  document.getElementById("modal_1_savings_yearly").innerHTML = modal_1_savings_yearly;      
+
+ }
+      var modal_1a_tot = 0;
+      var modal_1a_savings_daily = 0;
+      var modal_1a_savings_yearly = 0; 
+
+    function add_modal_1a() {
+        modal_1a_tot += 1;
+        document.getElementById("modal_1a_tot").innerHTML = modal_1a_tot;
+         modal_1a_savings_daily = modal_1a_tot * .166666;
+        document.getElementById("modal_1a_savings_daily").innerHTML = modal_1a_savings_daily;
+
+          modal_1a_savings_yearly= modal_1a_savings_daily * 365;
+                  document.getElementById("modal_1a_savings_yearly").innerHTML = modal_1a_savings_yearly;
+ }
+ function sub_modal_1a() {
+        modal_1a_tot -= 1;
+        document.getElementById("modal_1a_tot").innerHTML = modal_1a_tot;
+                 modal_1a_savings_daily = modal_1a_tot * .25;
+        document.getElementById("modal_1a_savings_daily").innerHTML = modal_1a_savings_daily;
+
+          modal_1a_savings_yearly= modal_1a_savings_daily * 52;
+                  document.getElementById("modal_1a_savings_yearly").innerHTML = modal_1a_savings_yearly;
+ }
+
+      var modal_2_tot = 0;
+      var modal_2_savings_daily = 0;
+      var modal_2_savings_yearly = 0; 
 
     function add_modal_2() {
-      modal_2_tot += 1;
-      document.getElementById("modal_2_tot").innerHTML = modal_2_tot;
-      modal_2_savings_daily = modal_2_tot * .25;
-      document.getElementById("modal_2_savings_daily").innerHTML = modal_2_savings_daily;
+        modal_2_tot += 1;
+        document.getElementById("modal_2_tot").innerHTML = modal_2_tot;
+         modal_2_savings_daily = modal_2_tot * .166666;
+        document.getElementById("modal_2_savings_daily").innerHTML = modal_2_savings_daily;
 
-      modal_2_savings_yearly = modal_2_savings_daily * 52
-      document.getElementById("modal_2_savings_yearly").innerHTML = modal_2_savings_yearly;
+          modal_2_savings_yearly= modal_2_savings_daily * 365;
+                  document.getElementById("modal_2_savings_yearly").innerHTML = modal_2_savings_yearly;
 
-    }
-    function sub_modal_2() {
-      modal_2_tot -= 1;
-      document.getElementById("modal_2_tot").innerHTML = modal_2_tot;
-      modal_2_savings_daily = modal_2_tot * 3;
-      document.getElementById("modal_2_savings_daily").innerHTML = modal_2_savings_daily;
+ }
+ function sub_modal_2() {
+        modal_2_tot -= 1;
+        document.getElementById("modal_2_tot").innerHTML = modal_2_tot;
+         modal_2_savings_daily = modal_2_tot * .166666;
+        document.getElementById("modal_2_savings_daily").innerHTML = modal_2_savings_daily;
 
-      modal_2_savings_yearly = modal_2_savings_daily * 52;
-      document.getElementById("modal_2_savings_yearly").innerHTML = modal_2_savings_yearly;
+          modal_2_savings_yearly= modal_2_savings_daily * 365;
+                  document.getElementById("modal_2_savings_yearly").innerHTML = modal_2_savings_yearly;
+ }
 
-    }
+      var modal_2a_tot = 0;
+      var modal_2a_savings_daily = 0;
+      var modal_2a_savings_yearly = 0; 
 
-  
+    function add_modal_2a() {
+        modal_2a_tot += 1;
+        document.getElementById("modal_2a_tot").innerHTML = modal_2a_tot;
+         modal_2a_savings_daily = modal_2a_tot * .166666;
+        document.getElementById("modal_2a_savings_daily").innerHTML = modal_2a_savings_daily;
 
-    var modal_3_tot = 0;
-    var modal_3_savings_daily = 0;
-    var modal_3_savings_yearly = 0;
+          modal_2a_savings_yearly= modal_2a_savings_daily * 365;
+                  document.getElementById("modal_2a_savings_yearly").innerHTML = modal_2a_savings_yearly;        
+ }
+ function sub_modal_2a() {
+        modal_2a_tot -= 1;
+        document.getElementById("modal_2a_tot").innerHTML = modal_2a_tot;
+         modal_2a_savings_daily = modal_2a_tot * .166666;
+        document.getElementById("modal_2a_savings_daily").innerHTML = modal_2a_savings_daily;
+
+          modal_2a_savings_yearly= modal_2a_savings_daily * 365;
+                  document.getElementById("modal_2a_savings_yearly").innerHTML = modal_2a_savings_yearly; 
+ }
+ 
+
+      var modal_3_tot = 0;
+      var modal_3_savings_daily = 0;
+      var modal_3_savings_yearly = 0;
+    
     function add_modal_3() {
       modal_3_tot += 1;
       document.getElementById("modal_3_tot").innerHTML = modal_3_tot;
@@ -233,13 +279,12 @@
       <!-- Water Section Content -->
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">Agriculture makes up 70% of freshwater demand. Products such as beef and commodities such as
-            chocolate tend to use the most water. Per ton of product, animal products generally have a larger water
-            footprint than crop products. The average water footprint of meat from beef cattle (15,400 cubed metric
-            tons) is twenty times larger than for cereals and starchy roots.</p>
+          <p class="lead">Agriculture makes up 70% of freshwater demand. Products such as beef and commodities such as chocolate tend to use the most water. The average water footprint of meat from beef cattle (15,400 cubed metric tons) is twenty times larger than for cereals and starchy roots. 
+            By choosing alternatives such as a salad or chicken in contrast to beef, you can help to significatly reduce long-term water usage, as these commodities require less water to cultivate.</p>
+
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead"></p>
+          <p class="lead">Domestic Use makes up 8% of freshwarer demand. According to the EPA, bathroom faucets run at about 2 gallons of water a minute. Therefore, by turning off faucets and taking shower showers, you can significatly cut down on your water usage overall. It is also a good practice to only use dishwashers once it is entirely full, as it requires less water than hand-washing them one-by-one.</p>
         </div>
       </div>
 
@@ -254,25 +299,24 @@
     <div class="container">
 
       <!-- plastic Section Heading -->
-      <img class="algnpt3" src="img/portfolio/bottle.png" alt="" width="50" height="100"><br>
+      <img class = "algnpt3" src="img/portfolio/bottle.png" alt="" width="45" height="100"><br>
       <h2 class="page-section-heading text-center text-lowercase text-white">Plastic</h2><br>
 
-      <!-- plastic Section Content -->
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
-            complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
-            customization.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">Plastics are durable, lightweight and inexpensive materials. They can readily be molded into
-            various products which find uses in a plethora of applications. Every year, more than 100 million tons of
-            plastics are manufactured across the globe. Around 200 billion pounds of new plastic material is
-            thermoformed, foamed, laminated and extruded into millions of packages and products. Consequently, the
-            reuse, recovery and the recycling of plastics are extremely important.
+     <!-- plastic Section Content -->
+     <div class="row">
+      <div class="col-lg-4 ml-auto">
+        <p class="lead">One third of all plastic waste ends up in soils or freshwater. Very little of the plastic we discard every day is recycled or incinerated in waste-to-energy facilities. Much of it ends up in landfills, where it may take up to 1,000 years to decompose, leaching potentially toxic substances into the soil and water. However, by reducing, reusing, and recycling pre-existing water bottles, we can prevent some of the negative environmental impacts associated with them.</p>
+        <br>
+        <p class = "lead">Plastics are durable, lightweight and inexpensive materials. They can readily be molded into various products which find uses in a plethora of applications.</p>
+      </div>
+      <div class="col-lg-4 mr-auto">
+        <p class="lead">
+           Every year, more than 100 million tons of plastics are manufactured across the globe. 
+           Around 200 billion pounds of new plastic material is thermoformed, foamed, laminated and extruded into millions of packages and products. 
+           Due to the fact that they are non-biodegradable and persist in nature for extended periods of time, improper disposal of plastic can lead to ocean pollution and bioaccumulation in the food chain.
+            Thus, it becomes vital for consumers to reuse, reduce, and recycle old bottles instead of continuing to buy single-use bottles. 
+        </p>
 
-          </p>
-        </div>
       </div>
     </div>
   </section>
@@ -289,18 +333,20 @@
       <img class="algnpt2" src="img/cloud.png" alt="" width="100" height="70"><br>
       <h2 class="page-section-heading text-center text-lowercase text-white">Emissions</h2><br>
 
-      <!-- emissions Section Content -->
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
-            complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
-            customization.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and
-            add your email address to the contact form to make it fully functional!</p>
-        </div>
-      </div>
+   <!-- emissions Section Content -->
+   <div class="row">
+    <div class="col-lg-4 ml-auto">
+      <p class="lead">Vehicles and engines account for about 78% of CO emissions in the United States. Carbon monoxide poses risk to humans and other animals, even in small concentrations.
+          It can bind irreversibly to hemoglobin in red blood cells, preventing the hemoglobin from binding with oxygen. Vehicle exhaust also contributes to global climate change and acid deposition: the setting of acidic or acid-forming pollutants from the atmosphere onto Earth’s surface. This can take place through precipitation, fog, gases, or the deposition of dry particles
+          </p>
+    </div>
+    <div class="col-lg-4 mr-auto">
+      <p class="lead">Acidic deposition can have wide-ranging, cumulative detrimental effects on ecosystems and on our built environment.
+          Acids leach nutrients such as calcium, magnesium, and potassium from the topsoil, altering soil chemistry and harming plants and soil organisms.
+          In order to combat the increasing emissions of carbon monoxide and carbon dioxide in our environment, simple decisions such as carpooling or opting to take mass transit instead of point-sources like cars, you can help reduce the amount of greenhouse gas emissions and acid rain. 
+          </p>
+    </div>
+  </div>
 
     </div>
   </section>
@@ -356,6 +402,12 @@
           <h3 style="border:3px;">Did You Know?</h3>
         </div>
       </div>
+     
+      <div class="box3">
+        <h3 style="border:3px;"></h3>
+        <h3 style="border:3px;">Did You Know?</h3>
+        <p class = "lead">In the United States, more than 40 percent of municipal solid waste is paper -- about 71.8 tons a year.</p>
+      </div>
     </div>
     </div>
   </section>
@@ -365,20 +417,21 @@
     <div class="container">
       <div class="row">
 
-
-        <!-- Footer Social Icons -->
-        <div class="f00ter">
-          <h4 class="text-lowercase">made with 💖 by the windycityhacks she++ team.✨</h4>
-          <h4 class="text-lowercase">justina, becky, yamilett, & salma.👩‍💻</h4>
-          <h4 class="text-lowercase">Copyright © Habit@ 2019.</h4>
-        </div>
-
-
-
+      <!-- Footer Social Icons -->
+      <div class="f00ter">
+        <h4 class="text-lowercase">made with 💖 by the windycityhacks she++ team.✨</h4>
+        <h4 class="text-lowercase">justina, becky, yamilett, & salma.👩‍💻</h4>
+      </div>
       </div>
     </div>
   </footer>
 
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; habit@ 2019.</small>
+    </div>
+  </section>
 
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -420,24 +473,20 @@
 
                 <!-- Portfolio Modal - Text -->
 
-                <p class="mb-5">Water is an essential element of all life. We can save hundreds of gallons of water a
-                  year if we conserve it wisely.</p>
-
-                <p class="mb-5">Turning off the sink while brushing teeth saves on average 1/6 of a gallon of water
-                  every time. Enter below how many times you turned off the sink while brushing your teeth today</p>
-                <hr />
-                <div class="btn-wrap">
-                  <button class="btn-style" type="button" onClick="add_modal_1()">+</button>
-                  <button class="btn-style" type="button" onClick="sub_modal_1()">-</button>
-                </div>
-
-
-                <p class="mb-5"> <a id="modal_1_tot">0</a> times water was saved while brushing teeth in a day. </p>
-                <hr />
-                <p class="mb-5"> This means you saved <a id="modal_1_savings_daily">0</a> gallons of water per day. If
-                  you keep that up, you'll save <a id="modal_1_savings_yearly">0</a> gallons of water per year.
-                </p>
-                <!-- 
+                <p class="mb-5">The average reusable bottle holds about 32 oz, whereas the average plastic water bottle can only hold 16 oz.
+                  The average human should be drinking at least 8 cups, or 64 oz, of water a day. 
+                  In contrast to reusable water bottles that would need to be refilled only once, you need 4 plastic bottles per day to meet 
+                  the recommended portion of water.
+                  <br>
+                  <br>
+                  By the year 2050, it is estimated that there will be more plastic than fish in the ocean. it is imperative we change our habits </p>
+                <p class="mb-5"> Use the tool below to select the number of times per week that you use a resuable cup instead of a single use plastic cup</p>
+                  <button type="button" onClick="add_modal_1()">+</button>
+                  <button type="button" onClick="sub_modal_1()">-</button>
+<p> <a id="modal_1_tot">0</a> times a reusable cup was used in the last week  </p>
+    <p> This means you saved <a id = "modal_1_savings_daily">0</a> grams of plastic from going into a landfill. if you keep that up, you'll prevent <a id = "modal_1_savings_yearly">0</a> pounds of trash from going into a landfill.
+      By using a reusable water bottle, you would be saving 1,460 plastic bottles per year. Even if you only purchased one plastic bottle per day, you’d still be wasting over 300 non-reusable containers that could be spared with one reusable bottle.
+    </p>
     <p>Total <a id="modal_1_tot">0</a></p>
     <button type="button" onClick="add_modal_1a()">+</button>
                   <button type="button" onClick="sub_modal_1a()">-</button>
