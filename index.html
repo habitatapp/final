@@ -27,19 +27,19 @@
     function add_modal_1() {
         modal_1_tot += 1;
         document.getElementById("modal_1_tot").innerHTML = modal_1_tot;
-         modal_1_savings_daily = modal_1_tot * .166666;
+         modal_1_savings_daily = ((32*modal_1_tot) / 16.9) * 13.5;
         document.getElementById("modal_1_savings_daily").innerHTML = modal_1_savings_daily;
 
-          modal_1_savings_yearly= modal_1_savings_daily * 365;
+          modal_1_savings_yearly= (modal_1_savings_daily/453.592) * 365;
                   document.getElementById("modal_1_savings_yearly").innerHTML = modal_1_savings_yearly;        
  }
  function sub_modal_1() {
         modal_1_tot -= 1;
         document.getElementById("modal_1_tot").innerHTML = modal_1_tot;
-        modal_1_savings_daily = modal_1_tot * .166666;
+        modal_1_savings_daily = ((32*modal_1_tot) / 16.9) * 52.1429;
         document.getElementById("modal_1_savings_daily").innerHTML = modal_1_savings_daily;
 
-          modal_1_savings_yearly= modal_1_savings_daily * 365;
+          modal_1_savings_yearly= (modal_1_savings_daily/453.592) * 52.1429;
                   document.getElementById("modal_1_savings_yearly").innerHTML = modal_1_savings_yearly;      
 
  }
@@ -88,7 +88,6 @@
 
           modal_2_savings_yearly= modal_2_savings_daily * 365;
                   document.getElementById("modal_2_savings_yearly").innerHTML = modal_2_savings_yearly;
-
  }
 
       var modal_2a_tot = 0;
@@ -478,12 +477,19 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">by the year 2050, it is estimated that there will be more plastic than fish in the ocean. it is imperative we change our habits </p>
-                <p class="mb-5"> use the tool below to select the number of times per week that you use a resuable cup instead of a single use plastic cup</p>
+                <p class="mb-5">The average reusable bottle holds about 32 oz, whereas the average plastic water bottle can only hold 16 oz.
+                  The average human should be drinking at least 8 cups, or 64 oz, of water a day. 
+                  In contrast to reusable water bottles that would need to be refilled only once, you need 4 plastic bottles per day to meet 
+                  the recommended portion of water.
+                  <br>
+                  <br>
+                  By the year 2050, it is estimated that there will be more plastic than fish in the ocean. it is imperative we change our habits </p>
+                <p class="mb-5"> Use the tool below to select the number of times per week that you use a resuable cup instead of a single use plastic cup</p>
                   <button type="button" onClick="add_modal_1()">+</button>
                   <button type="button" onClick="sub_modal_1()">-</button>
 <p> <a id="modal_1_tot">0</a> times a reusable cup was used in the last week  </p>
-    <p> This means you saved <a id = "modal_1_savings_daily">0</a> pounds of plastic from going into a landfill. if you keep that up, you'll prevent <a id = "modal_1_savings_yearly">0</a> pounds of trash from going into a landfill.
+    <p> This means you saved <a id = "modal_1_savings_daily">0</a> grams of plastic from going into a landfill. if you keep that up, you'll prevent <a id = "modal_1_savings_yearly">0</a> pounds of trash from going into a landfill.
+      By using a reusable water bottle, you would be saving 1,460 plastic bottles per year. Even if you only purchased one plastic bottle per day, you’d still be wasting over 300 non-reusable containers that could be spared with one reusable bottle.
     </p>
 <!-- 
     <p>Total <a id="modal_1_tot">0</a></p>
